@@ -91,12 +91,14 @@ p {
 
 .img-egg {
     justify-content: right;
+    height: 600px;
+    width: 50vw;
 }
 
 .text-container {
     justify-content: left;
     align-items: center;
-    margin: 150px;
+    margin: 170px 150px 0 150px;
 }
 
 .text-container a {
@@ -109,10 +111,160 @@ p {
 
 .text-container a:hover {
     text-decoration: underline;
-    text-decoration-color: rgb(245, 245, 59);
-    text-decoration-line: underline;
-    text-decoration-thickness: 3px;
+    text-decoration-color: hsl(51, 100%, 49%);
+    text-decoration-line: underline; 
+    text-decoration-thickness: 2px;
+    transform: skew(-15deg) translateX(-10%);
+    background: hsl(51, 100%, 49%);
+    z-index: -1;
 }
+
+.container2 {
+    display: flex;
+}
+
+.text-container2 {
+    justify-content: right;
+    align-items: center;
+    margin: 150px 150px 0 150px;
+}
+   
+.container3 {
+    display: flex;
+}
+
+.wrapper1 {
+background: url(images/desktop/image-graphic-design.jpg);
+background-position:left;
+background-repeat: no-repeat;
+width: 50vw;
+height: 600px;
+display: inline-block;
+}
+
+.wrapper2 {
+background: url(images/desktop/image-photography.jpg);
+background-position: right;
+background-repeat: no-repeat;
+width: 50vw;
+height: 600px;
+display: inline-block;
+}
+
+.photo-h4 {
+    text-align: center;
+    margin: 370px 100px 0px 100px;
+    font-family: 'Fraunces', serif;
+    font-size: 1.7rem;
+    color: hsl(198, 62%, 26%);
+}
+
+.photo-p {
+    text-align: center;
+    margin: 10px 150px 0px 150px;
+    color: hsl(198, 62%, 26%);
+}
+
+.design-h4 {
+    text-align: center;
+    margin: 370px 100px 0px 100px;
+    font-family: 'Fraunces', serif;
+    font-size: 1.7rem;
+    color: hsl(167, 40%, 24%);
+}
+
+.design-p {
+    text-align: center;
+    margin: 10px 150px 0px 150px;
+    color: hsl(167, 40%, 24%)
+}
+
+/* TESTIMONIALS */
+
+h5 {
+    font-family: 'Fraunces', serif;
+}
+
+.testimonial-h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    color: rgb(199, 190, 190);
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 6rem 0 5rem 0;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.testimonial {
+    display: inline-block;
+    width: 25%;
+    margin: 50px;
+    text-align: center;
     
+}
 
+.testimonial img {
+    border-radius: 50%;
+    height: 80px;
+}
 
+.testimonial p small {
+    color: rgb(199, 190, 190);
+    font-size: 0.7rem;
+}
+
+/* IMAGES */
+
+.img-container {
+    display: flex;
+}
+
+.img-container img {
+    width: 25vw;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: hsl(171, 58%, 74%);
+    
+    height: 250px;
+    text-align: center;
+}
+
+footer img {
+    text-align: center;
+    display: inline-block;
+    color: hsl(168, 34%, 41%);
+    margin: 50px 10px 20px 10px;
+}
+
+ul li {
+    display: inline-block;
+    margin-top: 20px;
+    list-style: none;
+    text-decoration: none;
+   
+}
+
+li a {
+    color: hsl(168, 34%, 41%);
+    margin: 0.3rem;
+}
+
+.links {
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+li a:hover {
+    color: white;
+}
+
+a img:hover {
+    fill:white;
+}

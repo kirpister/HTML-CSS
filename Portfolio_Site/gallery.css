@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 0.2rem;
+    grid-template-areas:
+    "nyc nyc highlands suomenlinna"
+    "wales sanfran marseille marseille"
+    "virrat leeds leeds vaskivesi";
+    grid-auto-rows: 1fr;
+    width: 70%;
+    padding: 20px;
+    width: 70vw;
+    margin: 5% 15% 5% 15%;
+}
+
+.img img {
+    min-height: 200px;
+    width: 95%;
+    height: auto;
+}
+
+.img1 {
+    grid-area: nyc;
+}
+
+.img2 {
+    grid-area: highlands;
+
+}
+
+.img3 {
+    grid-area: suomenlinna;
+}
+
+.img4 {
+    grid-area: wales;
+}
+
+.img5 {
+    grid-area: sanfran;
+}
+
+.img6 {
+    grid-area: marseille;
+}
+
+.img7 {
+    grid-area: virrat;
+}
+
+.img8 {
+    grid-area: leeds;
+}
+
+.img9 {
+    grid-area: vaskivesi;
+}

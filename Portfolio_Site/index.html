@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Site</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
@@ -20,7 +21,6 @@
         <div class="logo"><h1>JENNI / ALANKO</h1></div>
 
         <nav>
-
             <button id="mob-btn">
                 <span class="material-icons"> menu </span> 
             </button> 
@@ -29,6 +29,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="http://www.bc.fi/">More about BCH</a></li>
 
@@ -47,7 +48,7 @@
 
 <section id="projects">
 
-     <div class="cards">
+    <div class="cards">
 
     <div class="project-card">
          <img src="img/code.jpg" alt="computer">
@@ -74,7 +75,7 @@
 </div>
 </section>
 
-    <!-- CONTENT -->
+    <!-- ABOUT ME -->
 
 <section id="about-me">
 
@@ -83,37 +84,40 @@
     <h3>About Me</h3>
 
         <img class="leeds-img" src="img/leeds.jpg" alt="leeds">
-            <p>I'm currently studying to become a web developer and I'm mastering my craft at Business College Helsinki. I'm a massive music nerd and collect vinyl records and love going to shows. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum massa ultrices nunc ultricies, et bibendum ante cursus. Integer posuere purus in venenatis gravida.</p>
+        <p>I'm currently studying to become a web developer and I'm mastering my craft at Business College Helsinki. I'm a massive music nerd and collect vinyl records and love going to shows. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum massa ultrices nunc ultricies, et bibendum ante cursus. Integer posuere purus in venenatis gravida.</p>
 
     </div>
 </section>
 
+<!-- SKILLS SECTION -->
 
 <section id="skills">
 
     <div class="container">
-<h3 class="skill-txt">Skills</h3>
-<div class="skills-group">
+        <h3 class="skill-txt">Skills</h3>
+
+    <div class="skills-group">
     
-<div class="skill">
-    <i class="material-icons">html</i>
-    <h4>HTML5</h4>
-     <progress value="30" max="100">30%</progress>
-</div>
+    <div class="skill">
+        <i class="material-icons">html</i>
+        <h4>HTML5</h4>
+        <progress value="30" max="100">30%</progress>
+    </div>
 
-<div class="skill">
-    <i class="material-icons">css</i>
-    <h4>CSS3</h4>
-     <progress value="30" max="100">30%</progress>
-</div>
+    <div class="skill">
+        <i class="material-icons">css</i>
+        <h4>CSS3</h4>
+        <progress value="30" max="100">30%</progress>
+    </div>
 
-<div class="skill">
-    <i class="material-icons">javascript</i>
-    <h4>JavaScript</h4>
-     <progress value="10" max="100">10%</progress>
-</div>
-</div>
-</div>
+    <div class="skill">
+        <i class="material-icons">javascript</i>
+        <h4>JavaScript</h4>
+        <progress value="10" max="100">10%</progress>
+    </div>
+
+    </div>
+    </div>
 
 </section>
 
@@ -123,33 +127,37 @@
 
     <div>
 
-            <h3 class="contactme">Contact Me</h3>
+        <h3 class="contactme">Contact Me</h3>
 
-            <form>
-                <div class="form">
-                    <label for="yrName"></label>
-                    <input type="text" placeholder="Your Name:"/> 
-                </div>
-            
-                <div class="form">
-                    <label for="email"></label>
-                    <input type="email" placeholder="Email:" />
-                </div>
-            
-                <div class="form">
-                    <label for="textarea"></label>
-                    <textarea type="textarea" cols="33" rows="5" placeholder="Your message"></textarea>
-                </div>
+        <form>
 
-        <button>SEND</button>
+            <div class="form">
+                <label for="yrName"></label>
+                <input type="text" placeholder="Your Name:"/> 
+            </div>
+            
+            <div class="form">
+                <label for="email"></label>
+                <input type="email" placeholder="Email:" />
+            </div>
+            
+            <div class="form">
+                <label for="textarea"></label>
+                <textarea type="textarea" cols="33" rows="5" placeholder="Your message"></textarea>
+            </div>
+
+            <button>SEND</button>
 
             <p class="footer">© 2022 Jenni Alanko.</p>
 
-            </form>
+        </form>
             
-            </div>
-            <button class="btn" id="to-top">Top &#11014;</button>
+    </div>
+
+    <button class="btn" id="to-top">Top &#11014;</button>
+
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
