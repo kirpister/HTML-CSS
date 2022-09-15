@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background-color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "title title title nav nav2 nav3"
+    "ptitle ptitle ptitle ptitle ptitle sidebar"
+    "meta cont cont cont cont sidebar"
+    "meta cont cont cont cont ads"
+    "meta img img img img ads"
+    "meta img img img img stuff"
+    "meta img img img img stuff"
+    "footer footer footer footer footer footer";
+    grid-gap: 0.4rem;
+    grid-auto-rows: 1fr;
+    background-color: rgb(246, 209, 156);
+}
+
+.Stitle {
+    grid-area: title;
+    background-color: rgb(10, 245, 163);
+    min-height: 80px;
+    padding: 1rem;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: rgb(27, 244, 168);
+    padding: 1rem;
+}
+
+.nav2 {
+    grid-area: nav2;
+    background-color: rgb(27, 244, 168);
+    padding: 1rem;
+}
+
+.nav3 {
+    grid-area: nav3;
+    background-color: rgb(27, 244, 168);
+    padding: 1rem;
+}
+
+.Ptitle {
+    grid-area: ptitle;
+    background-color: rgb(55, 247, 180);
+    padding: 1rem;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(108, 245, 197);
+    padding: 1rem;
+}
+
+.meta {
+    grid-area: meta;
+    background-color: rgb(129, 247, 205);
+    padding: 1rem;
+}
+
+.content {
+    grid-area: cont;
+    background-color: rgb(136, 243, 205);
+    padding: 1rem;
+}
+
+.ads {
+    grid-area: ads;
+    background-color: rgb(156, 250, 217);
+    padding: 1rem;
+}
+
+.image {
+    grid-area: img;
+    background-color: rgb(171, 245, 219);
+    padding: 1rem;
+}
+
+.stuff {
+    grid-area: stuff;
+    background-color: rgb(183, 245, 223);
+    padding: 1rem;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(195, 244, 227);
+    padding: 1rem;
+}

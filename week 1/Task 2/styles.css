@@ -1,0 +1,19 @@
+body {
+    background-color: indigo;
+}
+
+h1 {
+font-family: 'Ubuntu', sans-serif;
+color: white;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+h2, h3, h4, h5, h6 {
+    color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+}

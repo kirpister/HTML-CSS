@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section {
+    background: lightcyan;
+    height: 400px;
+    width: 100vw;
+    padding: 1rem;
+    margin: 1rem;
+    z-index: 1;
+}
+
+.item {
+    height: 200px;
+    width: 200px;
+    background: lightgreen;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#section-a .item:nth-child(2) {
+    position: relative;
+    z-index: 3;
+}
+
+#section-a .item:nth-child(3) {
+    position: relative;
+    background: lightcoral;
+    top: -100px;
+    left: 100px;
+    z-index: 2;
+}
+
+#section-b .item {
+    position: fixed;
+    background: lightsalmon;
+    top: 0;
+    right: 0;
+}
+
+#section-c .item {
+    position: absolute;
+    background: lightseagreen;
+    right: 200px;
+    bottom: 0;
+}
+
+#section-d {
+    height: 2000px;
+}
+
+#section-d .item {
+    position: sticky;
+    top: 50px;
+    background: lightpink;
+}
+
+.material-icons {
+    color: #333;
+    font-size: 48px;
+}
+
+.material-icons:hover{
+    color: red;
+}
+
+.fa-solid {
+color: #333;
+font-size: 40px;
+padding: 5px;
+}

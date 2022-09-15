@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Karla:wght@300&family=Philosopher&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  
+    <title>Task 4</title>
+</head>
+
+<style>
+    body {
+        font-family: 'Karla', sans-serif;
+        font-size: 16px;
+    }
+
+    table,
+    td {
+        border: 1px solid #333;
+        border-collapse: collapse;
+        padding: 10px;
+    }
+
+    thead {
+        background-color: coral;
+        color: white;
+        text-align: center;
+    }
+
+    table {
+        margin: 20px;
+        }
+
+    .center {
+        text-align: center;
+        background-color: #ebebeb;
+        font-weight: 800;
+    }
+
+</style>
+<body>
+   
+    <table>
+
+        <thead>
+<tr>
+<td>Description</td>
+<td>Input Example</td>
+<td>Notes</td>
+</tr>
+
+        </thead>
+<tbody>
+    <tr>
+        <td>type="button"</td>
+        <td><input type="button" value="clickme"/></td>
+        <td>Needs value attribute for button text.</td>
+    </tr>
+    <tr>
+        <td>type="checkbox"</td>
+        <td><input type="checkbox" />something</td>
+        <td>Checkbox text comes after input tag.</td>
+    </tr>
+    <tr>
+        <td>type="color"</td>
+        <td><input type="color" value="#ff0000"></td>
+        <td>With value you can set default color.</td>
+    </tr>
+    <tr>
+        <td>type="range"</td>
+        <td><input type="range" min="5" max="10" /></td>
+        <td>You can use min and max attributes to add numeric restrictions in the input field.</td>
+    </tr>
+    <tr>
+        <td>type="text"</td>
+        <td><input type="text" /></td>
+        <td>Most common input used.</td>
+    </tr>
+    <tr>
+        <td>type="password"</td>
+        <td><input type="password"/></td>
+        <td>Secrets..</td>
+    </tr>
+    <tr>
+        <td>type="date"</td>
+        <td><input type="date" /></td>
+        <td>Choose a date</td>
+    </tr>
+    <tr>
+        <td>type="email"</td>
+        <td><input type="email"/></td>
+        <td>Put in yr email</td>
+    </tr>
+    <tr>
+        <td>type="number"</td>
+        <td><input type="number" /></td>
+        <td>Only numbers allowed</td>
+    </tr>
+    <tr>
+        <td>type="time"</td>
+        <td><input type="time" /></td>
+        <td>Input a time</td>
+    </tr>
+    <tr>
+        <td>type="hidden"</td>
+        <td><input type="hidden" /></td>
+        <td>More secrets...</td>
+    </tr>
+
+    <tr>
+        <td class="center" colspan="3">Select and textarea:</td>
+    </tr>
+
+    <tr>
+        <td>Select example:</td>
+        <td>
+            <select name="cars">
+                <option value="audi">Audi</option>
+                <option value="miniCooper">Mini Cooper</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+            </select>
+        </td>
+        <td>Select is wrapping options.</td>
+    </tr>
+
+    <tr>
+        <td>Textarea:</td>
+        <td>
+            <textarea name="example" id="example1" cols="20" rows="3"></textarea> 
+        </td>
+        <td>The size of a text area can be specifies by the cols and rows attributes or evem better through CSS with width or height properties</td>
+    </tr>
+</tbody>
+
+    </table>
+
+
+
+</body>
+</html>

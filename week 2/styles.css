@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+   background-color: #110e0e; 
+}
+
+h2 {
+    line-height: 30px;
+    color:#cfbfbf;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+}
+
+p {
+    color:#cfbfbf;
+    font-family: 'Karla', sans-serif;
+}
+
+/* Header area */
+
+
+header {
+    background-color: #363030;
+    text-align: right;
+}
+
+nav ul{
+    list-style: none;
+}
+
+ul li a {
+padding: 20px;
+display: block;
+color: white;
+text-decoration: none;
+}
+
+header li {
+    display: inline-block;
+    font-family: 'Karla', sans-serif;
+}
+
+li:hover {
+    background-color: rgb(15,15,15);
+}
+
+section {
+padding: 32px;
+}
+
+
+.kitty-img {
+    width: 30%;
+    border-radius: 20px;
+}
+
+/* Boxes */
+
+#boxes {
+    background: url("img/storm.webp"); no-repeat fixed center center/cover;
+}
+
+.box {
+display: inline-block;
+width: 100px;
+height: 100px;
+margin: 32px;
+}
+
+.red,
+.blue,
+.green,
+.yellow,
+.black {
+height: 150px;
+width: 150px;
+}
+
+
+.red {
+background-color: red;
+border: 3px dotted white;
+}
+
+.blue {
+background-color:blue;
+border: 5px double white;
+}
+
+.green {
+background-color: green;
+border-width: 4px;
+border-style: solid;
+border-color: purple yellow blue red;
+}
+
+.yellow {
+background-color: yellow;
+border: 3px dashed;
+border-radius: 10px;
+
+}
+
+.black {
+background-color: black;
+border-radius: 80px;
+border: 3px dotted white;
+}
+
+
+/* TABLE */
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    width: 200px;
+    padding: 15px;
+}
+
+thead {
+    font-weight: bold;
+    background: #333;
+    color: white;
+}
+
+tbody {
+    color: white;
+}
+
+tbody td {
+    border-bottom: 1px solid white;
+}

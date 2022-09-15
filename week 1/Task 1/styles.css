@@ -1,0 +1,20 @@
+body {
+    background-color: darkslategray;
+    
+}
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    color: white; 
+    text-align: center;
+}
+
+p {
+font-family: 'Karla', sans-serif;
+color: white;
+font-size: 13px;
+text-align: center;
+}
+
+/* comment */

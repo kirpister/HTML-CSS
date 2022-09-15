@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;600&family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(150, 251, 217);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.grid-container {
+    display: grid;
+    margin: 0 auto;
+    background-color: rgb(162, 229, 169);
+    grid-template-columns: 2fr 2fr 2fr; /*repeat(3, 2fr);*/
+    grid-template-rows: 100px 200px 50px 100px;
+    grid-gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.item {
+    background: rgb(212, 246, 190);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.item:first-child {
+    background: rgb(195, 245, 199);
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.item:last-child {
+    background: yellowgreen;
+    grid-column: 1 / span 3;
+}
+
+
+/* Grid two */
+
+.areas-container {
+    display: grid;
+    grid-template-areas: 
+    "whatever whatever whatever whatever"
+    "bleep whee whee yippee"
+    "bleep whee whee yippee"
+    " . whee whee yippee"
+    "mehh mehh mehh mehh";  /* . makes an emply space as it does not exist in names */
+    grid-gap: 0.4rem;
+    grid-auto-rows: 1fr;
+    background-color: rgb(246, 209, 156);
+}
+
+.header {
+    grid-area: whatever;
+    background-color: rgb(247, 196, 130);
+    padding: 1rem;
+    min-height: 100px;
+}
+
+.left {
+    grid-area: bleep;
+    background-color: rgb(244, 186, 111);
+    padding: 1rem;
+}
+
+.main {
+    grid-area: whee;
+    background-color: rgb(249, 185, 100);
+    padding: 1rem;
+}
+
+.aside {
+    grid-area: yippee;
+    background-color: rgb(247, 178, 87);
+    padding: 1rem;
+}
+
+.footer {
+    grid-area: mehh;
+    background-color: rgb(249, 172, 72);
+    padding: 1rem;
+}

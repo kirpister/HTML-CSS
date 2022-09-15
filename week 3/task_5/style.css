@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(51, 85, 51);
+    font-family: 'Karla', sans-serif;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 5px;
+}
+
+p {
+    font-size: 9px;
+    text-align: center;
+    padding: 0 3px 15px 3px;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+
+button {
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: white;
+    font-size: 9px;
+    padding: 5px;
+    font-family: inherit;
+    width: 150px;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+}
+
+label {
+    margin-left: 16px;
+    padding-bottom: 5px;
+}
+
+.container {
+    background-color: rgb(242, 235, 235);
+    border-radius: 5px;
+    width: 220px;
+    margin:auto;
+}
+
+.form {
+    margin-bottom: 15px;
+    font-size: 8px;
+    position: relative;
+}
+
+
+.intro {
+    font-size: 11px;
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    padding: 3%;
+} 
+
+.bottom-text {
+    font-family: 'Karla', sans-serif;
+    font-size: 9px;
+    color: white;
+    position: relative;
+}

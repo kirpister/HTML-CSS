@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+font-size: 1.5rem;
+height: 100%;
+}
+
+header {
+display: flex;
+}
+
+.pm {
+min-height: 100px;
+margin: 2px;
+}
+
+.site-title {
+background: yellow;
+flex: 1;
+}
+
+nav {
+flex: 1;
+}
+
+ul {
+display: flex;
+list-style: none;
+}
+
+li {
+background: pink;
+flex: 1;
+}
+
+main {
+display: flex;
+height: 100%;
+}
+
+section {
+flex: 3;
+}
+
+.post-title {
+background: rgb(104, 137, 148);
+}
+
+.section-post-container {
+display: flex;
+height: calc(100% - 105px);
+}
+
+.post-meta {
+flex: 1;
+background: lightgreen;
+}
+
+.main-content-container {
+flex: 3;
+display: flex;
+flex-direction: column;
+}
+
+.main-content {
+background: lightgray;
+flex: 1;
+}
+
+.main-content-img {
+background: yellow;
+flex: 2;
+}
+
+aside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+aside div:first-child {
+background: orange;
+flex: 1;
+}
+
+aside div:nth-child(2){
+background: green;
+flex: 1;
+}
+
+aside div:last-child {
+background: violet;
+flex: 1;
+}
+
+footer {
+background: brown;
+}
+
+
+header, 
+ul,
+main, 
+.section-post-container, 
+aside,
+.main-content-container {
+    @media (max-width: 320px)
+}
+
+.section-post-container {
+    flex-direction: column;
+    @media (max-width: 768)
+}
+

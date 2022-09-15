@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;600&family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+.wrapper {
+    background-image: url(images/desktop/image-header.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+}
+
+button {
+    background-color: white;
+    border: 1px solid white;
+    color: #333;
+    font-size: 0.7rem;
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    font-family: 'Fraunces', serif;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    color: white;
+    letter-spacing: 10px;
+    font-size: 3.2rem;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 3rem;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 1.5rem;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    margin: 1.5rem;
+}
+
+.arrow {
+    margin-left: 48%;
+    margin-top: 7%;
+}
+
+/* SECTIONS */
+
+section {
+    width: 100vw;
+}
+
+h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+
+p {
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 15px 0 25px 0;
+}
+
+.container1 {
+   display: flex;
+} 
+
+.img-egg {
+    justify-content: right;
+}
+
+.text-container {
+    justify-content: left;
+    align-items: center;
+    margin: 150px;
+}
+
+.text-container a {
+    font-family: 'Fraunces', serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #333;
+    margin-top: 15px; 
+}
+
+.text-container a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(245, 245, 59);
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+}
+    
+
+

@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #333;
+}
+
+h2 {
+    margin: 2rem 0;
+}
+
+p {
+   line-height: 1.5;
+    margin: 1rem 0;
+}
+
+i {
+    font-size: 3rem;
+}
+
+.material-icons {
+    font-size: 3rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#skills {
+    min-height: 500px;
+}
+
+.skill {
+    background-color: rgb(230, 243, 146);
+    padding: 2rem;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+
+.skills-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.skill:nth-child(odd) {
+    background-color: rgb(161, 248, 248);
+}
+
+progress[value] {
+    height: 1.5rem;
+    background: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+progress[value]::-webkit-progress-value {
+    background: coral;
+    border-radius: 5px;
+    background-size: 35px 20px;
+}
