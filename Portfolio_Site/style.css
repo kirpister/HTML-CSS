@@ -58,7 +58,6 @@ a {
     font-family: 'Rubik',sans-serif;
     padding-right: 1.5rem;
     margin: 1rem;
-    
 }
 
 h1 {
@@ -73,14 +72,23 @@ h2 {
     letter-spacing: 10px;
 }
 
-p {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1rem;
-    padding: 10px;
+h3 {
+    font-size: 1.4rem;
+    padding: 1.4rem;
+    display: inline-block;
+    margin-left: 3rem;
+    color: #382238;
 }
 
 h4 {
     padding: 10px;
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    padding: 10px;
+    color: #382238;
 }
 
 .logo {
@@ -100,22 +108,17 @@ h4 {
 
 /* PROJECTS SECTION */
 
-h3 {
-    font-size: 1.4rem;
-    padding: 1.4rem;
-    display: inline-block;
-}
-
 .cards {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 2rem;
 }
 
 .project-card {
     margin: 20px;
     border-radius: 5px;
-    width: 30%;
+    width: 25%;
 }
 
 .project-card img {
@@ -152,7 +155,12 @@ h3 {
     height: 45vh;
     width: 100vw;
     background-color: #D09fb1;
-    padding: 3rem;
+    padding: 3rem 6rem 1rem 6rem;
+}
+
+.about-h3 {
+    margin-left: -0.5rem;
+    color: #382238;
 }
 
 /* SKILLS SECTION */
@@ -205,29 +213,33 @@ progress[value]::-webkit-progress-value {
 
 /* FOOTER & CONTACT SECTION */
 
-/*label {
-    color:#D09fb1;
-}*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 input {
-    width: 250px;
+    width: 247px;
+    margin: 0.5rem;
 }
 
 textarea {
     font-family: 'Rubik', sans-serif;
+    margin: 0.5rem;
 } 
 
-.footer {
+.footer-p {
     font-size: 0.8rem;
     color:#D09fb1;
     padding-top: 1rem;
-    
 }
 
 .contactme {
     color:#D09fb1;
     font-size: 1.4rem;
 }
+
 
 #contact {
     text-align: center;
@@ -249,6 +261,7 @@ textarea {
 /* MOBILE */
 
 @media only screen and (max-width: 800px) {
+    
     nav ul {
         display: none;
     }
@@ -283,4 +296,11 @@ textarea {
         display: block;
         width: 100%;
     }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
 }
