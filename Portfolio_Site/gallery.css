@@ -8,6 +8,8 @@
 
 body {
     font-family: 'Rubik', sans-serif;
+    background-color: #252525;
+    color: #D09fb1;
 }
 
 header {
@@ -30,7 +32,7 @@ ul {
 }
 
 a {
-    color: #252525;
+    color: #D09fb1;
     text-decoration: none;
     font-family: 'Rubik',sans-serif;
     padding-right: 1.5rem;
@@ -50,22 +52,24 @@ a {
 
 .grid-container {
     display: grid;
-    grid-gap: 0.3rem;
+    grid-gap: 0.7rem;
     grid-template-areas:
     "nyc nyc highlands suomenlinna"
     "virrat leeds leeds vaskivesi"
     "wales sanfran marseille marseille";
     grid-auto-rows: 1fr;
-    width: 70%;
-    padding: 20px;
-    width: 70vw;
-    margin: 5% 15% 5% 15%;
+    /*grid-template-rows: max-content;*/
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 25px;
 }
 
-.img img {
-    min-height: 200px;
-    width: 95%;
-    height: auto;
+.img > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .img1 {
@@ -74,7 +78,6 @@ a {
 
 .img2 {
     grid-area: highlands;
-
 }
 
 .img3 {

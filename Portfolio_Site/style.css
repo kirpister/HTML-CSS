@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Rubik:wght@300&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+:root {
+    --light-color: #D09fb1;
+    --dark-color: #382238;
+    --med-color: #7D4662;
+    --med-dark-color: #5a2f42;
+    --main-font: 'Rubik', sans-serif;
+}
 
 * {
     margin: 0;
@@ -10,25 +17,28 @@
 }
 
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: var(--main-font);
+}
+
+main {
+    background: #f4f0f0;
 }
 
 .wrapper {
-    background-color: #D09fb1;
+    background-color: var(--light-color);
     background-image: url(img/westpier.jpeg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
-    color:#D09fb1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    color: var(--light-color);
     background-blend-mode: multiply;
 }
 
 button {
-    background-color: #5a2f42;
-    border: 1px solid #5a2f42;
+    background-color: var(--med-dark-color);
+    border: 1px solid var(--med-dark-color);
     border-radius: 3px;
-    color:white;
+    color: white;
     width: 100px;
     padding: 5px;
 }
@@ -52,8 +62,8 @@ ul {
     flex: 3;
 }
 
-a {
-    color:#D09fb1;
+li a {
+    color: var(--light-color);
     text-decoration: none;
     font-family: 'Rubik',sans-serif;
     padding-right: 1.5rem;
@@ -77,18 +87,23 @@ h3 {
     padding: 1.4rem;
     display: inline-block;
     margin-left: 3rem;
-    color: #382238;
+    color: var(--med-dark-color);
 }
 
 h4 {
     padding: 10px;
+    color: var(--dark-color);
 }
 
 p {
     font-family: 'Roboto Slab', serif;
     font-size: 1rem;
     padding: 10px;
-    color: #382238;
+    color: var(--dark-color);
+}
+
+.header-h2 {
+   margin: 200px 0 200px 0;
 }
 
 .logo {
@@ -99,7 +114,7 @@ p {
 }
 
 .bg {
-    background-color:  #5a2f42;
+    background-color:  var(--med-dark-color);
 }
 
 #mob-btn {
@@ -116,8 +131,10 @@ p {
 }
 
 .project-card {
-    margin: 20px;
-    border-radius: 5px;
+    margin: 50px 20px 50px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(125, 121, 121);
+    padding: 1.4rem 0.8rem 1.4rem 0.4rem;
     width: 25%;
 }
 
@@ -138,36 +155,33 @@ p {
 .project-card a {
     padding: 0 20px;
     margin-bottom: 20px;
-    color: #5a2f42;
+    color: var(--dark-color);
     font-family: 'Roboto Slab', serif;
 }
 
 /* ABOUT ME SECTION */
 
-.leeds-img {
+.selfie {
     width: 20%;
     float: right;
     padding: 15px;
+    border-radius: 50%;
 }
 
 .about_me {
     display: inline-block;
     height: 45vh;
     width: 100vw;
-    background-color: #D09fb1;
+    background-color: var(--light-color);
     padding: 3rem 6rem 1rem 6rem;
 }
 
 .about-h3 {
     margin-left: -0.5rem;
-    color: #382238;
+    color: var(--dark-color);
 }
 
 /* SKILLS SECTION */
-
-i {
-    font-size: 2rem;
-}
 
 progress[value] {
     height: 1.5rem;
@@ -182,7 +196,7 @@ progress[value]::-webkit-progress-bar {
 }
 
 progress[value]::-webkit-progress-value {
-    background: #382238;
+    background: var(--med-dark-color);
     border-radius: 5px;
     background-size: 35px 20px;
 }
@@ -205,10 +219,10 @@ progress[value]::-webkit-progress-value {
 }
 
 .skill {
-    background-color: #D09fb1;
+    box-shadow: 0 1px 5px rgb(104, 103, 103);
     padding: 2rem;
     border-radius: 5px;
-    border: 1px solid #5a2f42;
+    border: 1px solid var(--dark-color);
 }
 
 /* FOOTER & CONTACT SECTION */
@@ -229,22 +243,29 @@ textarea {
     margin: 0.5rem;
 } 
 
+.contact-imgs img {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+}
+
 .footer-p {
     font-size: 0.8rem;
-    color:#D09fb1;
+    color: var(--light-color);
     padding-top: 1rem;
 }
 
-.contactme {
-    color:#D09fb1;
-    font-size: 1.4rem;
+.contactme-h3 {
+    color: var(--light-color);
+    font-size: 1.6rem;
+    margin: 0 auto;
 }
 
 
 #contact {
     text-align: center;
-    height: 50vh;
-    background-color: #382238;
+    height: 42vh;
+    background-color: var(--dark-color);
 }
 
 .form {

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;600&family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root {
+    --primary-color: rgb(130, 220, 142);
+    --secondary-color: rgb(35, 138, 49);
+    --neutral-color: rgb(201, 242, 206);
+    --dark-color: #252525;
+    --light-color: #fff;
+    --font: 'Fraunces', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--neutral-color);
+    font-family: var(--font);
+    color: var(--primary-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.item {
+    background: var(--secondary-color);
+    min-height: 300px;
+    border-radius: 5px;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 2px var(--dark-color), 3px 3px 4px var(--light-color);
+    margin: 10px;
+    transition: all 2s ease-in-out;
+}
+
+.item:hover {
+    box-shadow: inset 0  0px 500px var(--dark-color);
+    background: var(--primary-color);
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 10px var(--dark-color), inset 0px 0px 5px var(--dark-color);
+    transition: height 2s, width 2s;
+}
+
+.circle:hover {
+    height: 300px;
+    width: 300px;
+}
