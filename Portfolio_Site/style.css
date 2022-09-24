@@ -144,6 +144,10 @@ h2 {
 
 /* PROJECTS SECTION */
 
+.project-h3 {
+    margin-left: 5.5rem;
+}
+
 .cards {
     display: flex;
     justify-content: space-around;
@@ -152,10 +156,10 @@ h2 {
 }
 
 .project-card {
-    margin: 3rem 1.3rem 3rem 1.3rem;
+    margin: 1rem 1.3rem 3rem 1.3rem;
     border-radius: 0.5rem;
     border: 1px solid rgb(125, 121, 121);
-    padding: 1.4rem 0.8rem 1.4rem 0.4rem;
+    padding: 1rem 0.8rem 1.4rem 0.4rem;
     width: 25%;
 }
 
@@ -168,7 +172,7 @@ h2 {
 
 .project-card h3, 
 .project-card p, 
-.project-card a{
+.project-card a {
     margin-left: 0.2rem;
 }
 
@@ -212,7 +216,7 @@ progress[value] {
 }
 
 progress[value]::-webkit-progress-bar {
-    background-color: rgb(242, 212, 212);
+    background-color: var(--light-color);
     border-radius: 3px;
 }
 

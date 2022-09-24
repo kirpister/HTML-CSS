@@ -3,6 +3,7 @@ const mobButton = document.querySelector('#mob-btn');
 const nav = document.querySelector('nav');
 const backButton = document.querySelector('#to-top');
 const links = document.querySelectorAll('nav ul li a');
+const toTop = document.querySelector('#to-top');
 
 window.onscroll = function () {
     scrollFunction();
@@ -38,3 +39,4 @@ for (const link of links) {
 }
 
 mobButton.addEventListener('click', mobMenu);
+toTop.addEventListener('click', getToTop);
