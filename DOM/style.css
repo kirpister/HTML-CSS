@@ -200,6 +200,7 @@ footer {
         position: absolute;
         left: 0;
         top: 80px;
+        padding: 2rem;
     }
 
     nav.responsive ul li {
