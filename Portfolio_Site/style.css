@@ -114,13 +114,12 @@ li a:hover::before {
 h1 {
     text-align: center;
     letter-spacing: 0.9rem;
-    
 }
 
 h2 {
     text-align: center;
     margin-top: 28%;
-    font-size: 3rem;
+    font-size: 2.8rem;
     letter-spacing: 0.7rem;
     /* filter:blur(0.5px); */
 }
@@ -145,15 +144,13 @@ h2 {
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
 }
-
     @keyframes spin {
     from {
         transform:rotate(0deg);
     }
     to {
         transform:rotate(360deg);
-    }
-}
+    }}
 
 .bg {
     background-color: var(--med-dark-color);
@@ -178,7 +175,7 @@ h2 {
 }
 
 .project-card {
-    margin: 1rem 1.3rem 3rem 1.3rem;
+    /* margin: 1rem 1.3rem 3rem 1.3rem; */
     border-radius: 0.5rem;
     border: 1px solid rgb(125, 121, 121);
     padding: 1rem 0.8rem 1.4rem 0.4rem;
@@ -188,20 +185,18 @@ h2 {
 .project-card img {
     width: 90%;
     height: 170px;
-    border-radius: 5px;
-    margin-left: 1.2rem;
+    border-radius: 0.5rem;
+    margin: 0.5rem 1rem 0.5rem 1.2rem;
 }
 
-.project-card h3, 
-.project-card p, 
-.project-card a {
+.project-card h3 {
+    font-family: var(--main-font);
     margin-left: 0.2rem;
-}
+} 
 
 .project-card p,
 .project-card a {
-    padding: 0 1.3rem;
-    margin-bottom: 1.2rem;
+    margin: 0 1rem 0.5rem 1rem;
     color: var(--dark-color);
     font-family: 'Roboto Slab', serif;
 }
@@ -257,13 +252,13 @@ progress[value]::-webkit-progress-value {
 .skills-group {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 3rem;
+    margin: 1.5rem 0 1rem 0;  
     justify-content: space-around;
     text-align: center;
 }
 
 #skills {
-    height: 50vh;
+    height: 51vh;
 } 
 
 .skill {
@@ -271,7 +266,6 @@ progress[value]::-webkit-progress-value {
     padding: 2rem;
     border-radius: 5px;
     border: 1px solid rgb(223, 220, 220);
-    background-color: #f4f0f0;
 }
 
 .skill-txt {
@@ -315,15 +309,10 @@ textarea {
     margin: 0 auto;
 }
 
-
 #contact {
     text-align: center;
-    height: 52vh;
+    height: 57vh;
     background-color: var(--dark-color);
-}
-
-.form {
-    margin: 1%; 
 }
 
 #to-top {
@@ -362,7 +351,8 @@ textarea {
     }
 
     .project-card {
-        width: 40%;
+        width: 43%;
+        margin-bottom: 2rem;
     }
 
     .about_me {
@@ -377,8 +367,7 @@ textarea {
         margin: 0.5rem;
     }
 
-   
-    #contact {
+   #contact {
         height: 37vh;
     }
 
@@ -425,17 +414,13 @@ textarea {
         font-size: 0.8rem;
     }
 
-    h2 {
+    .logo img, h2 {
         display: none;
     }
 
-    .logo img {
-        display: none;
-    }
-
-    .cards {
+    /* .cards {
         flex-wrap: wrap;
-    }
+    } */
 
     .project-card {
         width: 90%;
@@ -452,7 +437,7 @@ textarea {
     }
 
     .skill {
-        margin-bottom: 25px;
+        margin-bottom: 2rem;
     }
 
     #skills {
@@ -461,5 +446,5 @@ textarea {
 
     #contact {
         height: 60vh;
-    }
+       }
 }
