@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal portfolio site">
+    <meta name="keywords" content="HTML CSS web developer portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Site</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    
+<div class="wrapper">
+
+    <header>
+        <div class="logo"><img src="icons/logo-ja.png" alt="logo"><h1>JENNI / ALANKO</h1></div>
+
+        <nav>
+            <button id="mob-btn">
+                <span class="material-icons"> menu </span> 
+            </button> 
+
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="http://www.bc.fi/">About BCH</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <div class="header-h2">
+        <h2>Welcome to my Portfolio</h2>
+    </div>
+
+    <hr>
+
+     <!-- PROJECT CARDS -->
+<main>
+<section id="projects">
+
+    <h3 class="project-h3">PROJECTS</h3>
+
+    <div class="cards">
+
+    <div class="project-card">
+         <img src="img/speedgame.png" alt="screenshot">
+        <h3>Speedgame!</h3>
+        <p>Feel the speeeed! Click away with this old classic recreated with HTML, CSS & JavaScript. </p>
+        <a href="https://public.bc.fi/s2200726/SpeedGame/"><small>Read More</small></a>
+    </div>
+
+    <div class="project-card">
+        
+        <img src="img/isnap.png" alt="screenshot">
+        <h3>iSnap</h3>
+        <p>Gallery of bad iPhone music photography throughout the years. HTML & CSS.</p>
+        <a href="nope.html"><small>Read more</small></a>
+        
+    </div>
+
+    <div class="project-card">
+
+        <img src="img/gradientgen.png" alt="screenshot">
+        <h3>Gradient generator</h3>
+        <p>Never again will you struggle to find the perfect linear gradient for your needs with this nifty thing! HTML, CSS & JavaScript.</p>
+        <a href="https://public.bc.fi/s2200726/gradient/"><small>Read more</small></a>
+     
+    </div>
+
+</div>
+</section>
+
+<hr>
+
+    <!-- ABOUT ME -->
+
+<section id="about-me">
+
+    <div class="about_me">
+
+    <h3 class="about-h3">ABOUT ME</h3>
+
+        <img class="selfie" src="img/naama.jpg" alt="selfie">
+        <p>I'm currently studying to become a web developer and I'm mastering my craft at Business College Helsinki. When I'm not glued to the screens you can find me on the pitch playing football or spinning some records, some things are just better analog! 
+             <br><br>
+        I love to travel and always try to align my trips to catch a tour by my favorite artists when possible. Check out the gallery to see some snaps from my travels!
+        </p>
+
+    </div>
+</section>
+
+<hr>
+
+    <!-- SKILLS SECTION -->
+
+<section id="skills">
+
+    <div class="container">
+        <h3 class="skill-txt">SKILLS</h3>
+
+    <div class="skills-group">
+    
+    <div class="skill">
+        <img class="icon" src="icons/html2.png" alt="html icon">
+        <h4>HTML5</h4>
+        <progress value="50" max="100">50%</progress>
+    </div>
+
+    <div class="skill">
+        <img class="icon" src="icons/css2.png" alt="css icon">
+        <h4>CSS3</h4>
+        <progress value="50" max="100">50%</progress>
+    </div>
+
+    <div class="skill">
+        <img class="icon" src="icons/js2.png" alt="javascript icon">
+        <h4>JavaScript</h4>
+        <progress value="25" max="100">25%</progress>
+    </div>
+
+    </div>
+    </div>
+
+</section>
+</main>
+
+    <!-- FOOTER -->
+
+    <hr>
+
+<footer id="contact">
+
+    <div>
+
+        <h3 class="contactme-h3">Contact Me</h3>
+
+       <div class="contact-imgs">
+        <a href="https://twitter.com/skunkero77"><img src="icons/twitter2.png" alt="twitter"></a>
+        <a href="https://www.instagram.com/kirpister/?hl=fi"><img src="icons/instagram2.png" alt="instagram"></a>
+        <a href="https://fi.linkedin.com/in/jenni-alanko77"><img src="icons/linkedin2.png" alt="linkedin"></a>
+       </div>
+      
+         <form>
+
+            <div class="form">
+                <label for="name"></label>
+                <input type="text" placeholder="Your Name:"> 
+            </div>
+            
+            <div class="form">
+                <label for="email"></label>
+                <input type="email" placeholder="Email:">
+            </div>
+            
+            <div class="form">
+                <label for="textarea"></label>
+                <textarea cols="33" rows="5" placeholder="Your message"></textarea>
+            </div>
+
+            <button>SEND</button>
+
+            <p class="footer-p">© 2022 Jenni Alanko.<br>
+            <small><a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Icons from Flaticon</a></small></p>
+
+        </form>
+            
+    </div>
+
+    <button class="btn" id="to-top">Top &#11014;</button>
+
+</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

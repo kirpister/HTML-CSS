@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+:root {
+    --grey: rgb(137, 137, 137);
+    --blue: #7af3e9;
+    --pink: #f78ce7;
+    --main-font: 'Rubik', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overscroll-behavior: none;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+hr {
+    display: block;
+    height: 7px;
+    background: linear-gradient(45deg, #7af3e9, #ff26f9);
+    border: none;
+}
+
+button {
+    border: none;
+    background: linear-gradient(45deg, rgb(106, 199, 241) 20%,  rgba(255,53,127,1) 100%);
+    border-radius: 3px;
+    color: white;
+    width: 100px;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    padding: 1.4rem;
+    display: inline-block;
+    color: #7af3e9;
+}
+
+h4 {
+    padding: 1rem;
+    color: var(--blue);
+}
+
+
+p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    color: var(--grey)
+}
+
+.wrapper {
+    background:linear-gradient(rgba(38, 43, 47, 0.172), rgba(10, 10, 10, 0.524)), url(waves.jpg) no-repeat;
+    background-size: contain;
+    color: rgb(137, 137, 137);
+}
+
+#projects,
+#about-me,
+#skills,
+#contact {
+    background: url(darkbg.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+/***** HEADER SECTION *****/
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 85px;
+}
+
+ul {
+    display: flex;
+    padding: 25px;
+    justify-content: end;
+    align-items: center;
+    list-style-type: none;
+    flex: 3;
+}
+
+li a {
+    color: rgb(137, 137, 137);
+    text-decoration: none;
+    font-family: 'Rubik',sans-serif;
+    margin-right: 3rem;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--blue);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s ease-in-out;
+}
+
+li a:hover::before {
+    transform-origin: bottom;
+    transform: scaleX(1);
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 0.9rem;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 28%;
+    font-size: 2.8rem;
+    letter-spacing: 0.7rem;
+    margin-bottom: 10%
+}
+
+.logo {
+    display: flex;
+    flex: 2;
+    margin-left: 1.9rem;
+    margin-top: 0.5rem;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin: -5px 25px 0 0;
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+    @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }}
+
+.bg {
+    background-color: #252525;
+    z-index: 999;
+}
+
+#mob-btn {
+    display: none;
+}
+
+/***** PROJECTS SECTION *****/
+
+.project-h3 {
+    margin: 2rem 0 0 2.5rem;
+    letter-spacing: 5px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4.5rem;
+}
+
+.project-card {
+    padding: 1rem 0.8rem 1.4rem 0.4rem;
+    width: 25%;
+}
+
+.project-card img {
+    width: 85%;
+    height: auto;
+    border-radius: 0.5rem;
+    filter: grayscale(.2);
+    margin: 0.5rem 1rem 0.5rem 1.2rem;
+}
+
+.project-card h3 {
+    font-family: var(--main-font);
+    margin-left: 0.2rem;
+} 
+
+.project-card p,
+.project-card a {
+    margin: 1.5rem;
+    color: var(--grey);
+    font-family: 'Roboto Slab', serif;
+}
+
+/***** ABOUT ME SECTION *****/
+
+.selfie {
+    width: 20%;
+    float: right;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.about_me {
+    display: inline-block;
+    padding: 1.3rem 6rem 1rem 6rem;
+}
+
+.about-h3 {
+    margin-left: -3.5rem;
+    letter-spacing: 5px;
+}
+
+/***** SKILLS SECTION *****/
+
+progress[value] {
+    height: 1.5rem;
+    background: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #54c6fb;
+    border-radius: 3px;
+}
+
+progress[value]::-webkit-progress-value {
+    background: #f560e9e9;
+    border-radius: 3px;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.skills-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0 1rem 0;  
+    justify-content: space-around;
+    text-align: center;
+}
+
+#skills {
+    height: 55vh;
+} 
+
+.skill {
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 12px 0 rgba(131, 131, 132, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.1 );
+    padding: 2rem;
+}
+
+.skill-txt {
+    letter-spacing: 5px;
+    margin: 1.3rem 0 1.5rem -1.5rem;
+}
+
+/* FOOTER & CONTACT SECTION */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 247px;
+    margin: 0.5rem;
+}
+
+textarea {
+    font-family: var(--main-font);
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+} 
+
+.contact-imgs img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.5rem;
+}
+
+.footer-p {
+    font-size: 0.8rem;
+    color: var(--blue);
+    padding-top: 1.3rem;
+}
+
+.footer-p a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.contactme-h3 {
+    color: var(--blue);
+    font-size: 1.6rem;
+    margin: 0 auto;
+}
+
+#contact {
+    text-align: center;
+    height: 55vh;
+}
+
+#to-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: none;
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 1020px) {
+    
+    nav ul {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1rem;
+        margin-top: 12px;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+  
+    .wrapper {
+        background: url(waves.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .project-card {
+        width: 43%;
+        margin-bottom: 2rem;
+    }
+
+    .about_me {
+        height: 25vh;
+    }
+
+    #skills {
+        height: 33vh;
+    }
+
+    .skill-txt {
+        margin: 0.5rem;
+    }
+
+   #contact {
+        height: 37vh;
+    }
+
+    #mob-btn {
+        background: transparent;
+        border: none;
+        display: block;
+    }
+
+    nav.responsive ul {
+        background: #252525;
+        width: 100%;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 80px;
+    }
+
+    nav.responsive ul li {
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    nav.responsive ul li a {
+        color: var(--blue);
+        display: block;
+        width: 20%;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 760px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    h1 {
+        font-size: 0.8rem;
+    }
+
+    .logo img, h2 {
+        display: none;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+
+    .about_me {
+        height: 110vh;
+        padding: 4rem;
+    }
+
+    .selfie {
+        width: 120px;
+        height: 120px;
+    }
+
+    .skill {
+        margin-bottom: 2rem;
+    }
+
+    #skills {
+        height: 130vh;
+    }
+
+    #contact {
+        height: 60vh;
+       }
+}
