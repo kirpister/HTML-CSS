@@ -281,9 +281,10 @@ footer {
     align-items: center;
 }
 
-input {
+input[type=text] {
     width: 247px;
     margin: 0.5rem;
+    padding: 5px;
 }
 
 textarea {
